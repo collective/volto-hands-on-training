@@ -100,6 +100,8 @@ const customBlocks = {
 
 export const blocks = {
   ...defaultBlocks,
-  requiredTiles: [],
-  tilesConfig: { ...defaultBlocks.tilesConfig, ...customBlocks },
+  blocksConfig: { ...defaultBlocks.blocksConfig, ...customBlocks },
 };
+
+export const addonRoutes = [];
+export const addonReducers = {};
