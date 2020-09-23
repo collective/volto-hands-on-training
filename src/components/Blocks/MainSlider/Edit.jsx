@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Edit = ({ data, onChangeTile, tile, selected, properties }) => {
+const Edit = ({ data, onChangeBlock, id, selected, properties }) => {
   return <div>I'm the MainSlider edit component!</div>;
 };
 

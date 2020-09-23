@@ -3,12 +3,12 @@ import { SidebarPortal } from '@plone/volto/components';
 import TeaserSidebar from './TeaserSidebar';
 import TeaserBody from './TeaserBody';
 
-const Edit = ({ data, onChangeTile, tile, selected, properties }) => {
+const Edit = ({ data, onChangeBlock, id, selected, properties }) => {
   return (
     <>
-      <TeaserBody data={data} properties={properties} id={tile} isEditMode />
+      <TeaserBody data={data} properties={properties} id={id} isEditMode />
       <SidebarPortal selected={selected}>
-        <TeaserSidebar data={data} tile={tile} onChangeTile={onChangeTile} />
+        <TeaserSidebar data={data} id={id} onChangeBlock={onChangeBlock} />
       </SidebarPortal>
     </>
   );

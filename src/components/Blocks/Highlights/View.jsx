@@ -11,7 +11,7 @@ const View = props => {
   const { id } = props;
 
   return (
-    <div className="tile highlights">
+    <div className="block highlights">
       <Grid columns="3">
         <Grid.Column>
           <div className="highlight">
