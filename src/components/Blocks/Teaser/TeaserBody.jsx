@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Message } from 'semantic-ui-react';
 import { defineMessages, injectIntl } from 'react-intl';
-import imageTileSVG from '@plone/volto/components/manage/Blocks/Image/block-image.svg';
+import imageBlockSVG from '@plone/volto/components/manage/Blocks/Image/block-image.svg';
 import { getContent } from '@plone/volto/actions';
 import { flattenToAppURL } from '@plone/volto/helpers';
 
@@ -32,7 +32,7 @@ const TeaserBody = ({ data, id, isEditMode, intl }) => {
       {!data.href && (
         <Message>
           <div className="teaser-item default">
-            <img src={imageTileSVG} alt="" />
+            <img src={imageBlockSVG} alt="" />
             <p>{intl.formatMessage(messages.PleaseChooseContent)}</p>
           </div>
         </Message>

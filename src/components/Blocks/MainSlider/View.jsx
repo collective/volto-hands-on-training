@@ -30,7 +30,7 @@ const PrevArrow = ({ className, style, onClick }) => (
 const View = props => {
   return (
     <div
-      className="tile view mainslider full-width"
+      className="block view mainslider full-width"
       style={{
         background: `url(${sliderPNG}) center no-repeat`,
       }}
