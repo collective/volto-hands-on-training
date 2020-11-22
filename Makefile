@@ -22,6 +22,7 @@ build-frontend:
 
 .PHONY: Build Plone 5.2
 build-backend:  ## Build Plone 5.2
+
 	(cd api && virtualenv --python=python3 .)
 	(cd api && bin/pip install --upgrade pip)
 	(cd api && bin/pip install -r requirements.txt)
